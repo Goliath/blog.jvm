@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Bitecode blog</title><link>https://bitecode.blog/post/</link><description>Recent content in Posts on Bitecode blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 10 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bitecode.blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Tweaking the stack for fun and profit</title><link>https://bitecode.blog/2024/05/10/tweaking-stack-for-fun-and-profit/</link><pubDate>Fri, 10 May 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/05/10/tweaking-stack-for-fun-and-profit/</guid><description>&lt;h2 id="stackoverflow">Stackoverflow&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Bitecode blog</title><link>https://bitecode.blog/post/</link><description>Recent content in Posts on Bitecode blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 09 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bitecode.blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Git spoofing</title><link>https://bitecode.blog/2024/10/09/git-spoofing/</link><pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/10/09/git-spoofing/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>when checking git log or GitHub commits history we can see that each commit has a corresponding author.
+We learned to trust that information.&lt;/p>
+&lt;p>What if I told you that this information can be easily spoofed?&lt;/p>
+&lt;h2 id="what-is-git-log">What is git log&lt;/h2>
+&lt;p>Every time we commit changes to the git repository, git stores information about the author of the commit.&lt;/p>
+&lt;p>This information is stored per commit object and can be displayed by executing &lt;code>git log&lt;/code> command.&lt;/p></description></item><item><title>Tweaking the stack for fun and profit</title><link>https://bitecode.blog/2024/05/10/tweaking-stack-for-fun-and-profit/</link><pubDate>Fri, 10 May 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/05/10/tweaking-stack-for-fun-and-profit/</guid><description>&lt;h2 id="stackoverflow">Stackoverflow&lt;/h2>
 &lt;p>we&amp;rsquo;ve all been there&amp;hellip; :)&lt;/p>
 &lt;p>JVM will throw StackoverflowException when it detects that the thread stack memory space is full. This is similar situation we encounter when we run out of heap memory and get OutOfMemoryException.
 Most of the time, we&amp;rsquo;re experiencing stackoverflow exception when thread in the JVM application has too long call chain. That can result in eating up all stack memory by stack frames.
@@ -63,6 +69,5 @@ I must say I wasn’t.&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>I use log.debug so my information is logged only if my project configuration allows that. That way if we turn off DEBUG, the logged line should not affect application speed. But is that really true?&lt;/p>
 &lt;p>Let’s check if the logged value is really not accessed?
 To do so we need to turn off DEBUG and modify the code:&lt;/p></description></item><item><title>Welcome to Bitecode Blog</title><link>https://bitecode.blog/2016/05/01/hello-world/</link><pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2016/05/01/hello-world/</guid><description>&lt;blockquote>
-&lt;p>“Yeah It&amp;rsquo;s on. ”&lt;/p>
-&lt;/blockquote>
+&lt;p>“Yeah It&amp;rsquo;s on. ”&lt;/p>&lt;/blockquote>
 &lt;h2 id="hello-world">Hello World!&lt;/h2></description></item></channel></rss>

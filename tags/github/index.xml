@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GITHUB on Bitecode blog</title><link>https://bitecode.blog/tags/github/</link><description>Recent content in GITHUB on Bitecode blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 09 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bitecode.blog/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Git spoofing</title><link>https://bitecode.blog/2024/10/09/git-spoofing/</link><pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/10/09/git-spoofing/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>when checking git log or GitHub commits history we can see that each commit has a corresponding author.
+We learned to trust that information.&lt;/p>
+&lt;p>What if I told you that this information can be easily spoofed?&lt;/p>
+&lt;h2 id="what-is-git-log">What is git log&lt;/h2>
+&lt;p>Every time we commit changes to the git repository, git stores information about the author of the commit.&lt;/p>
+&lt;p>This information is stored per commit object and can be displayed by executing &lt;code>git log&lt;/code> command.&lt;/p></description></item></channel></rss>
