@@ -1,28 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JVM on Bitecode blog</title><link>https://bitecode.blog/tags/jvm/</link><description>Recent content in JVM on Bitecode blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 10 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bitecode.blog/tags/jvm/index.xml" rel="self" type="application/rss+xml"/><item><title>Tweaking the stack for fun and profit</title><link>https://bitecode.blog/2024/05/10/tweaking-stack-for-fun-and-profit/</link><pubDate>Fri, 10 May 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/05/10/tweaking-stack-for-fun-and-profit/</guid><description>&lt;h2 id="stackoverflow">Stackoverflow&lt;/h2>
-&lt;p>we&amp;rsquo;ve all been there&amp;hellip; :)&lt;/p>
-&lt;p>JVM will throw StackoverflowException when it detects that the thread stack memory space is full. This is similar situation we encounter when we run out of heap memory and get OutOfMemoryException.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JVM on Bitecode blog</title><link>https://bitecode.blog/tags/jvm/</link><description>Recent content in JVM on Bitecode blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://bitecode.blog/tags/jvm/index.xml" rel="self" type="application/rss+xml"/><item><title>What is JAVA_TOOL_OPTIONS environment variable?</title><link>https://bitecode.blog/2025/01/10/what-is-java-tool-options/</link><pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2025/01/10/what-is-java-tool-options/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Everyone knows what JAVA_OPTS is, but have you ever heard about &lt;code&gt;JAVA_TOOL_OPTIONS&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;Over the years, the way we run JVM has changed. With demand for running the aps in containers, &lt;code&gt;JAVA_TOOL_OPTIONS&lt;/code&gt; environment variable might be handy. In this short article I will try to explain the reasons for using it.&lt;/p&gt;
+&lt;h2 id="what-is-java_tool_options-environment-variable-and-how-it-is-different-to-java_opts"&gt;What is JAVA_TOOL_OPTIONS environment variable and how it is different to JAVA_OPTS?&lt;/h2&gt;
+&lt;p&gt;After using Apache Tomcat for a longer time, one might have an illusion that JAVA_OPTS is an environment variable and is picked by JVM when the app starts.
+In fact, it is not. It is catalina sh/bat starter that passes JAVA_OPTS content to the start up command line.&lt;/p&gt;</description></item><item><title>Tweaking the stack for fun and profit</title><link>https://bitecode.blog/2024/05/10/tweaking-stack-for-fun-and-profit/</link><pubDate>Fri, 10 May 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/05/10/tweaking-stack-for-fun-and-profit/</guid><description>&lt;h2 id="stackoverflow"&gt;Stackoverflow&lt;/h2&gt;
+&lt;p&gt;we&amp;rsquo;ve all been there&amp;hellip; :)&lt;/p&gt;
+&lt;p&gt;JVM will throw StackoverflowException when it detects that the thread stack memory space is full. This is similar situation we encounter when we run out of heap memory and get OutOfMemoryException.
 Most of the time, we&amp;rsquo;re experiencing stackoverflow exception when thread in the JVM application has too long call chain. That can result in eating up all stack memory by stack frames.
 JVM has safe defaults for stack memory region and usually it&amp;rsquo;s around 1MB.
-If you encounter StackoverflowException, most likely you&amp;rsquo;re using recursion in your application - either planned or not :)&lt;/p></description></item><item><title>Remote JVM debugging</title><link>https://bitecode.blog/2024/04/23/remote-debugging-on-kubernates/</link><pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/04/23/remote-debugging-on-kubernates/</guid><description>&lt;h2 id="scenario">Scenario&lt;/h2>
-&lt;p>Debugging applications in a local environment is straightforward, but what happens when your application is running in a Kubernetes cluster?
+If you encounter StackoverflowException, most likely you&amp;rsquo;re using recursion in your application - either planned or not :)&lt;/p&gt;</description></item><item><title>Remote JVM debugging</title><link>https://bitecode.blog/2024/04/23/remote-debugging-on-kubernates/</link><pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/04/23/remote-debugging-on-kubernates/</guid><description>&lt;h2 id="scenario"&gt;Scenario&lt;/h2&gt;
+&lt;p&gt;Debugging applications in a local environment is straightforward, but what happens when your application is running in a Kubernetes cluster?
 Sometimes the best place to debug an issue is the remote instance itself.
-This article will guide you through the process of remotely debugging your Java applications running in Kubernetes.&lt;/p>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this very short post I assume you have:&lt;/p>
-&lt;ul>
-&lt;li>a Java application running in a Kubernetes cluster&lt;/li>
-&lt;li>IntelliJ IDEA&lt;/li>
-&lt;li>kubectl command-line tool installed and configured&lt;/li>
-&lt;/ul>
-&lt;h2 id="step-1-start-your-java-application-in-debug-mode">Step 1: Start Your Java Application in Debug Mode&lt;/h2>
-&lt;p>First, you need to ensure your Java application is running in debug mode. This is not happening by default.&lt;/p></description></item><item><title>Introduction to Java ergonomics</title><link>https://bitecode.blog/2024/04/20/java-ergonomics-basics/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/04/20/java-ergonomics-basics/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
-&lt;p>It&amp;rsquo;s not a secret that JVM is an extremly complex execution environment. It has many options that can be set to tune the application execution.
+This article will guide you through the process of remotely debugging your Java applications running in Kubernetes.&lt;/p&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this very short post I assume you have:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a Java application running in a Kubernetes cluster&lt;/li&gt;
+&lt;li&gt;IntelliJ IDEA&lt;/li&gt;
+&lt;li&gt;kubectl command-line tool installed and configured&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="step-1-start-your-java-application-in-debug-mode"&gt;Step 1: Start Your Java Application in Debug Mode&lt;/h2&gt;
+&lt;p&gt;First, you need to ensure your Java application is running in debug mode. This is not happening by default.&lt;/p&gt;</description></item><item><title>Introduction to Java ergonomics</title><link>https://bitecode.blog/2024/04/20/java-ergonomics-basics/</link><pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/04/20/java-ergonomics-basics/</guid><description>&lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s not a secret that JVM is an extremly complex execution environment. It has many options that can be set to tune the application execution.
 What happens if we don&amp;rsquo;t set any of them or we pick only few?
 In this article I will explain what is Java ergonomics and how it works to supply default JVM options.
-I will also tell why it&amp;rsquo;s never safe to rely on the defaults.&lt;/p></description></item><item><title>Serialization exploits in JVM</title><link>https://bitecode.blog/2024/04/05/jvm-serialization-exploits/</link><pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/04/05/jvm-serialization-exploits/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
-&lt;p>The Java Virtual Machine (JVM) provides a mechanism for persisting Java objects, known as serialization.
+I will also tell why it&amp;rsquo;s never safe to rely on the defaults.&lt;/p&gt;</description></item><item><title>Serialization exploits in JVM</title><link>https://bitecode.blog/2024/04/05/jvm-serialization-exploits/</link><pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/04/05/jvm-serialization-exploits/</guid><description>&lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
+&lt;p&gt;The Java Virtual Machine (JVM) provides a mechanism for persisting Java objects, known as serialization.
 When introducing, it was a great step forward, as developers stopped reinventing the wheel and writing the same (still complex) boilerplate code.
-As we later learned it also opened a pandora box. I will try to describe the problem in the article below.&lt;/p>
-&lt;h2 id="problem">Problem&lt;/h2>
-&lt;p>This process of serialization involves converting the state of an object into a byte stream, which can then be reverted back into a copy of the object.
-That way we can persist any object, store it, then load whenever we want.&lt;/p></description></item></channel></rss>
+As we later learned it also opened a pandora box. I will try to describe the problem in the article below.&lt;/p&gt;
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;This process of serialization involves converting the state of an object into a byte stream, which can then be reverted back into a copy of the object.
+That way we can persist any object, store it, then load whenever we want.&lt;/p&gt;</description></item></channel></rss>

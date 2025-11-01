@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Debugging on Bitecode blog</title><link>https://bitecode.blog/tags/debugging/</link><description>Recent content in Debugging on Bitecode blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 23 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bitecode.blog/tags/debugging/index.xml" rel="self" type="application/rss+xml"/><item><title>Remote JVM debugging</title><link>https://bitecode.blog/2024/04/23/remote-debugging-on-kubernates/</link><pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/04/23/remote-debugging-on-kubernates/</guid><description>&lt;h2 id="scenario">Scenario&lt;/h2>
-&lt;p>Debugging applications in a local environment is straightforward, but what happens when your application is running in a Kubernetes cluster?
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Debugging on Bitecode blog</title><link>https://bitecode.blog/tags/debugging/</link><description>Recent content in Debugging on Bitecode blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 23 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bitecode.blog/tags/debugging/index.xml" rel="self" type="application/rss+xml"/><item><title>Remote JVM debugging</title><link>https://bitecode.blog/2024/04/23/remote-debugging-on-kubernates/</link><pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/04/23/remote-debugging-on-kubernates/</guid><description>&lt;h2 id="scenario"&gt;Scenario&lt;/h2&gt;
+&lt;p&gt;Debugging applications in a local environment is straightforward, but what happens when your application is running in a Kubernetes cluster?
 Sometimes the best place to debug an issue is the remote instance itself.
-This article will guide you through the process of remotely debugging your Java applications running in Kubernetes.&lt;/p>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this very short post I assume you have:&lt;/p>
-&lt;ul>
-&lt;li>a Java application running in a Kubernetes cluster&lt;/li>
-&lt;li>IntelliJ IDEA&lt;/li>
-&lt;li>kubectl command-line tool installed and configured&lt;/li>
-&lt;/ul>
-&lt;h2 id="step-1-start-your-java-application-in-debug-mode">Step 1: Start Your Java Application in Debug Mode&lt;/h2>
-&lt;p>First, you need to ensure your Java application is running in debug mode. This is not happening by default.&lt;/p></description></item></channel></rss>
+This article will guide you through the process of remotely debugging your Java applications running in Kubernetes.&lt;/p&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this very short post I assume you have:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a Java application running in a Kubernetes cluster&lt;/li&gt;
+&lt;li&gt;IntelliJ IDEA&lt;/li&gt;
+&lt;li&gt;kubectl command-line tool installed and configured&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="step-1-start-your-java-application-in-debug-mode"&gt;Step 1: Start Your Java Application in Debug Mode&lt;/h2&gt;
+&lt;p&gt;First, you need to ensure your Java application is running in debug mode. This is not happening by default.&lt;/p&gt;</description></item></channel></rss>

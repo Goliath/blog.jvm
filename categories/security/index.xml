@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SECURITY on Bitecode blog</title><link>https://bitecode.blog/categories/security/</link><description>Recent content in SECURITY on Bitecode blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 09 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bitecode.blog/categories/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Git spoofing</title><link>https://bitecode.blog/2024/10/09/git-spoofing/</link><pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/10/09/git-spoofing/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>when checking git log or GitHub commits history we can see that each commit has a corresponding author.
-We learned to trust that information.&lt;/p>
-&lt;p>What if I told you that this information can be easily spoofed?&lt;/p>
-&lt;h2 id="what-is-git-log">What is git log&lt;/h2>
-&lt;p>Every time we commit changes to the git repository, git stores information about the author of the commit.&lt;/p>
-&lt;p>This information is stored per commit object and can be displayed by executing &lt;code>git log&lt;/code> command.&lt;/p></description></item><item><title>Serialization exploits in JVM</title><link>https://bitecode.blog/2024/04/05/jvm-serialization-exploits/</link><pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/04/05/jvm-serialization-exploits/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
-&lt;p>The Java Virtual Machine (JVM) provides a mechanism for persisting Java objects, known as serialization.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SECURITY on Bitecode blog</title><link>https://bitecode.blog/categories/security/</link><description>Recent content in SECURITY on Bitecode blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 09 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bitecode.blog/categories/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Git spoofing</title><link>https://bitecode.blog/2024/10/09/git-spoofing/</link><pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/10/09/git-spoofing/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;when checking git log or GitHub commits history we can see that each commit has a corresponding author.
+We learned to trust that information.&lt;/p&gt;
+&lt;p&gt;What if I told you that this information can be easily spoofed?&lt;/p&gt;
+&lt;h2 id="what-is-git-log"&gt;What is git log&lt;/h2&gt;
+&lt;p&gt;Every time we commit changes to the git repository, git stores information about the author of the commit.&lt;/p&gt;
+&lt;p&gt;This information is stored per commit object and can be displayed by executing &lt;code&gt;git log&lt;/code&gt; command.&lt;/p&gt;</description></item><item><title>Serialization exploits in JVM</title><link>https://bitecode.blog/2024/04/05/jvm-serialization-exploits/</link><pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate><guid>https://bitecode.blog/2024/04/05/jvm-serialization-exploits/</guid><description>&lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
+&lt;p&gt;The Java Virtual Machine (JVM) provides a mechanism for persisting Java objects, known as serialization.
 When introducing, it was a great step forward, as developers stopped reinventing the wheel and writing the same (still complex) boilerplate code.
-As we later learned it also opened a pandora box. I will try to describe the problem in the article below.&lt;/p>
-&lt;h2 id="problem">Problem&lt;/h2>
-&lt;p>This process of serialization involves converting the state of an object into a byte stream, which can then be reverted back into a copy of the object.
-That way we can persist any object, store it, then load whenever we want.&lt;/p></description></item></channel></rss>
+As we later learned it also opened a pandora box. I will try to describe the problem in the article below.&lt;/p&gt;
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;This process of serialization involves converting the state of an object into a byte stream, which can then be reverted back into a copy of the object.
+That way we can persist any object, store it, then load whenever we want.&lt;/p&gt;</description></item></channel></rss>
